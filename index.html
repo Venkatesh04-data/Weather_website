@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>☀️ Weather App</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-section="forecast">Forecast</a></li>
+        <li><a href="#" class="nav-link" data-section="about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HOME SECTION -->
+    <section id="homeSection" class="app-section active">
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div class="loading" id="loading" hidden>Loading...</div>
+      <div class="weather-info" id="weatherInfo">
+        <h2>Welcome to the Weather App!</h2>
+        <p>Search for any city to see the current weather conditions.</p>
+      </div>
+    </section>
+
+    <!-- FORECAST SECTION -->
+    <section id="forecastSection" class="app-section">
+      <h2>5-Day Forecast</h2>
+      <div id="forecastContainer" class="forecast-container"></div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="aboutSection" class="app-section">
+      <h2>About This App</h2>
+      <p>This weather app provides real-time weather information using OpenWeatherMap API.</p>
+      <p>Built with HTML, CSS, and JavaScript, this app includes dynamic backgrounds, weather icons, and responsive design.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌤 Built by Venkatesh Gudade | © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
